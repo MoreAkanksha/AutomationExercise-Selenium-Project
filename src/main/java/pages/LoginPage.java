@@ -35,6 +35,9 @@ public class LoginPage {
     @FindBy(xpath = "//a[contains(text(),'Logged in as')]")
     WebElement loggedInText;
 
+    @FindBy(xpath = "//a[contains(text(),'Logout')]")
+    WebElement logoutBtn;
+
     public void clickSignupLogin() {
 
         signupLoginBtn.click();
@@ -63,5 +66,20 @@ public class LoginPage {
     public boolean verifyLoginSuccess() {
 
         return loggedInText.isDisplayed();
+    }
+
+    public void clickLogoutButton() {
+
+        logoutBtn.click();
+    }
+
+    public boolean verifyLogoutSuccess() {
+
+        return signupLoginBtn.isDisplayed();
+    }
+
+    public String getErrorMessageText() {
+
+        return errorMessage.getText();
     }
 }

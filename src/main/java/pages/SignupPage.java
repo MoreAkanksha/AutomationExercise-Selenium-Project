@@ -197,6 +197,7 @@ public class SignupPage {
 //        }
 //    }
     
+    
 
     public void selectSpecialOfferIfRequired(boolean required) {
 
@@ -267,6 +268,7 @@ public class SignupPage {
 
         createAccountButton.click();
     }
+    
 
     public boolean isAccountCreatedMessageDisplayed() {
 

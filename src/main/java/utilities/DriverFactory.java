@@ -18,9 +18,12 @@ public class DriverFactory {
 			WebDriverManager.chromedriver().setup();
 			
 			ChromeOptions options = new ChromeOptions();
-//			options.addArguments("--headless=new");
+			options.addArguments("--headless=new");
+			
             options.addArguments("--disable-notifications");
             options.addArguments("--disable-popup-blocking");
+            options.addArguments("--disable-blink-features=AutomationControlled");
+            options.addArguments("--remote-allow-origins=*");
 
 			driver= new ChromeDriver(options);
 			

@@ -54,4 +54,26 @@ public class LoginSteps extends BaseClass {
 
         Assert.assertTrue(loginPage.verifyErrorMessage());
     }
+
+    @When("User clicks logout button")
+    public void user_clicks_logout_button() {
+
+        loginPage.clickLogoutButton();
+    }
+
+    @Then("User should logout successfully")
+    public void user_should_logout_successfully() {
+
+        Assert.assertTrue(loginPage.verifyLogoutSuccess());
+    }
+
+    @Then("Verify login error message text")
+    public void verify_login_error_message_text() {
+
+        String expectedMessage = "Your email or password is incorrect!";
+
+        String actualMessage = loginPage.getErrorMessageText();
+
+        Assert.assertEquals(actualMessage, expectedMessage);
+    }
 }
