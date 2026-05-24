@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.CommonActions;
+
 public class CheckoutPage {
 
     WebDriver driver;
@@ -82,10 +84,14 @@ public class CheckoutPage {
         expiryYear.sendKeys(year);
     }
 
-    public void clickPayAndConfirmOrder() {
-        payAndConfirmOrderBtn.click();
-    }
+//    public void clickPayAndConfirmOrder() {
+//        payAndConfirmOrderBtn.click();
+//    }
 
+    public void clickPayAndConfirmOrder() {
+
+        CommonActions.clickElement(driver, payAndConfirmOrderBtn);
+    }
     public boolean isOrderPlacedMessageDisplayed() {
         return orderPlacedMessage.isDisplayed();
     }

@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.CommonActions;
+
 public class CartPage {
 
     WebDriver driver;
@@ -59,7 +61,7 @@ public class CartPage {
     }
 
     public void clickCheckout() {
-        checkoutBtn.click();
+        CommonActions.clickElement(driver, checkoutBtn);
     }
 
     public void removeProduct() {

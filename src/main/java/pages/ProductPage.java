@@ -70,17 +70,29 @@ public class ProductPage {
                 ExpectedConditions.elementToBeClickable(
                         By.xpath("//a[contains(text(),'Products')]")));
 
-        products.click();
+//        products.click();
+        CommonActions.clickElement(driver, products);
     }
+    
 
     
+//    public void searchProduct(String product) {
+//        searchBox.clear();
+//        searchBox.sendKeys(product);
+//    }
+    
     public void searchProduct(String product) {
-        searchBox.clear();
-        searchBox.sendKeys(product);
+
+        CommonActions.sendText(driver, searchBox, product);
     }
 
+//    public void clickSearch() {
+//        searchBtn.click();
+//    }
+    
     public void clickSearch() {
-        searchBtn.click();
+
+        CommonActions.clickElement(driver, searchBtn);
     }
 
     public boolean isSearchedProductDisplayed() {
@@ -151,9 +163,13 @@ public class ProductPage {
 
     public void selectWomenDressCategory() {
 
-        womenCategory.click();
+//        womenCategory.click();
+//
+//        dressCategory.click();
+    	
+    	CommonActions.clickElement(driver, womenCategory);
 
-        dressCategory.click();
+    	CommonActions.clickElement(driver, dressCategory);
     }
 
     public boolean isWomenDressProductsTitleDisplayed() {

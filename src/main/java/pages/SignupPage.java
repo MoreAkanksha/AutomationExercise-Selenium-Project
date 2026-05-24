@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import utilities.CommonActions;
+
 public class SignupPage {
 
 	WebDriver driver;
@@ -179,11 +181,19 @@ public class SignupPage {
         selectYear(year);
     }
 
+//    public void selectNewsletterIfRequired(boolean required) {
+//
+//        if (required && !newsletter.isSelected()) {
+//
+//            newsletter.click();
+//        }
+//    }
+    
     public void selectNewsletterIfRequired(boolean required) {
 
         if (required && !newsletter.isSelected()) {
 
-            newsletter.click();
+            CommonActions.clickElement(driver, newsletter);
         }
     }
     
@@ -199,11 +209,19 @@ public class SignupPage {
     
     
 
+//    public void selectSpecialOfferIfRequired(boolean required) {
+//
+//        if (required && !specialOffer.isSelected()) {
+//
+//            specialOffer.click();
+//        }
+//    }
+    
     public void selectSpecialOfferIfRequired(boolean required) {
 
         if (required && !specialOffer.isSelected()) {
 
-            specialOffer.click();
+            CommonActions.clickElement(driver, specialOffer);
         }
     }
     

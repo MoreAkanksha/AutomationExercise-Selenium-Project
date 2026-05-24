@@ -1,0 +1,14 @@
+D:\Capstone_Project\automation-exercise\src\main\java\base\BaseClass.java
+D:\Capstone_Project\automation-exercise\src\main\java\pages\CartPage.java
+D:\Capstone_Project\automation-exercise\src\main\java\pages\CheckoutPage.java
+D:\Capstone_Project\automation-exercise\src\main\java\pages\ContactUsPage.java
+D:\Capstone_Project\automation-exercise\src\main\java\pages\LoginPage.java
+D:\Capstone_Project\automation-exercise\src\main\java\pages\ProductDetailsPage.java
+D:\Capstone_Project\automation-exercise\src\main\java\pages\ProductPage.java
+D:\Capstone_Project\automation-exercise\src\main\java\pages\SignupPage.java
+D:\Capstone_Project\automation-exercise\src\main\java\utilities\CommonActions.java
+D:\Capstone_Project\automation-exercise\src\main\java\utilities\ConfigReader.java
+D:\Capstone_Project\automation-exercise\src\main\java\utilities\DriverFactory.java
+D:\Capstone_Project\automation-exercise\src\main\java\utilities\ExtentManager.java
+D:\Capstone_Project\automation-exercise\src\main\java\utilities\ScreenshotUtil.java
+D:\Capstone_Project\automation-exercise\src\main\java\utilities\WaitUtils.java
